@@ -1,7 +1,13 @@
 # 한종류 이상의 과일이 5개 있는경우 yes 출력 문제
 
-# 카드의 개수 N 입력받음
-N = int(input().strip())
+import sys
+input = sys.stdin.read
+
+# 입력 데이터 한번에 읽음(줄단위로 분리)
+data = input().strip().split("\n")
+
+# 카드의 개수 N 입력받음(data의 첫번째)
+N = int(data[0])
 
 # 과일 초기값 설정
 fruit_dict = {
@@ -11,9 +17,9 @@ fruit_dict = {
     "PLUM": 0
 }
 
-for _ in range(N):
-    # 과일 이름, 과일 개수를 입력받음(list사용)
-    fruit, fruit_n = list(input().split())
+for i in range(1, N + 1):
+    # 과일 이름, 과일 개수를 입력받음
+    fruit, fruit_n = data[i].split()
     # 정수로 바꿔줌
     fruit_n = int(fruit_n)
     # 해당 과일의 개수를 누적해 줌
