@@ -10,7 +10,9 @@ N = int(input().strip())
 gom_i = 0
 
 # 채팅 기록 set을 써서 중복 방지
+# list를 써도 되는데 list를 쓰면 시간초과가 된다. 시간복잡도를 확인하자
 chat_log = set()
+
 
 for i in range(N):
     log = input().strip()
