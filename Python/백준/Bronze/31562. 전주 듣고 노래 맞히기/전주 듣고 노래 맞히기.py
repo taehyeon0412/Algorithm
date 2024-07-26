@@ -35,7 +35,7 @@ for _ in range(M):
                 match = "?"
                 break
 
-    if match is None:
+    if match == None:
         print('!')
     else:
         print(match)
