@@ -18,8 +18,7 @@ answer = []
 # 큐에서 k번째 제거
 while queue:
     # K-1명 큐의 뒤로 이동
-    for _ in range(K - 1):
-        queue.append(queue.popleft())
+    queue.rotate(-(K-1))
 
     # k 제거하고 결과에 추가
     answer.append(queue.popleft())
