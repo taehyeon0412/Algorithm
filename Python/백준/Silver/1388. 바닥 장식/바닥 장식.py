@@ -25,7 +25,7 @@ floor = [list(input().strip()) for _ in range(R)]
 count = 0
 
 # 판자가 이어지는지 여부만 판단하면 됨
-# 판자가 발견되고 그다음 인덱스에 -가 없으면 count+1 해주는 방식
+# 판자가 발견되면 count증가 , -이 없을때까지 j의 인덱스 증가 반복
 
 # 가로
 i = 0
