@@ -17,7 +17,7 @@ import sys
 input = sys.stdin.readline
 
 # 선분 입력 받음
-edges = [list(map(int, input().strip().split())) for _ in range(12)]
+edges = [tuple(map(int, input().strip().split())) for _ in range(12)]
 
 # 차수 계산 라이브러리 초기값
 degree = defaultdict(int)
