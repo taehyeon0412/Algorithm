@@ -41,7 +41,7 @@ for _ in range(n):
 # m(결과) 입력 받음
 m = int(input().strip())
 
-# 조건 입력 받고 검사함
+# 결과값 입력 받고 검사함
 for _ in range(m):
     a, _, b = input().strip().split()
     stack = [a]  # 스택 초기값
