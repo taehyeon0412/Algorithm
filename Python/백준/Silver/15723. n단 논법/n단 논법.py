@@ -1,3 +1,26 @@
+# 15723번
+# n단 논법 문제
+# stack을 이용한 DFS로 풀이
+""" 특별한 명시는 없지만 모든 전제는 “모든 a는 b이다”라는 의미이다.
+하지만 “모든 b는 a이다”의 의미는 될 수 없다.
+또한 a는 b이면서 c일 수 없으나, a와 b가 동시에 c일 수는 있다. """
+
+""" 
+3           # n = 3 (전제)
+a is b      # 전제 1
+b is c      # 전제 2
+c is d      # 전제 3
+3           # m = 3 (결론) N +2
+a is d      # 결론 1
+a is c      # 결론 2
+d is a      # 결론 3
+"""
+
+""" 
+defaultdict(int) => 0으로 초기화
+defaultdict(list) => []으로 초기화
+"""
+
 from collections import defaultdict
 import sys
 input = sys.stdin.readline
