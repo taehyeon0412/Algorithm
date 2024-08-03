@@ -30,7 +30,7 @@ while stack:
     for dx, dy in move:
         nx, ny = x + dx, y + dy
         # map안에 있는지 확인
-        if 0 <= nx < N and 0 <= ny < M:
+        if 0 <= nx < N and 0 <= ny < M and maps[nx][ny] != '.':
             if maps[nx][ny] == 'P':
                 count += 1
                 stack.append((nx, ny))
