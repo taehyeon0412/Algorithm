@@ -1,12 +1,14 @@
+# 11047번
+# 동전 값의 합을 K로 만들 때 동전 개수의 최솟값 문제
+# 그리디 알고리즘 문제
+
 import sys
 input = sys.stdin.readline
 
 # 입력 받음
 N, K = map(int, input().split())
-coin_list = []
 
-for _ in range(N):
-    coin_list.append(int(input().strip()))
+coin_list = [int(input()) for _ in range(N)]
 
 # 값이 큰 순으로 정렬
 coin_list.sort(reverse=True)
