@@ -1,3 +1,9 @@
+# 2447번
+# 별 찍기 문제
+
+import sys
+input = sys.stdin.readline
+
 n = int(input().strip())
 
 # 초기 패턴 정의
